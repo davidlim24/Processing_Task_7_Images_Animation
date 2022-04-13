@@ -35,7 +35,7 @@ In addition to Level 2 requirements, incorporate basic edge detection such that 
 In addtion to Level 3 requirements, animate an image so that it moves in a non-linear path i.e circular, wave, parabolic
 
 ## Resources
-Check out https://www.kenney.nl/assets for an extensive collection of images for your animation.  Note that the site is blocked at school so you'll need to usea VPN or download the files from home.
+Check out https://www.kenney.nl/assets for an extensive collection of images for your animation.  Note that the site is blocked at school so you'll need to use a VPN or download the files from home.
 
 
 ## Submission
