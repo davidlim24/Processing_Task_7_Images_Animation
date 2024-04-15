@@ -11,8 +11,7 @@ In this task, you will learn about:
 Acquire the learning objectives by reviewing the following:
 
 ### Class Demo
-* [Working Demo Code](https://github.com/mrfabroa/ProcessingImageAnimationDemo-working-)
-* [Lesson Video](https://drive.google.com/file/d/1qPsSY8lmNozpx29Z9eRuS-IUH4ZLVb8S/view)
+* [Working Demo Code](https://github.com/mschen-sta/ICS3U1_Lesson_5_8_Processing_Image_Animation_Working_Demo)
 
 ### Happy Coding
 from happycoding,io:
@@ -21,7 +20,7 @@ from happycoding,io:
 * [Collision Detection](https://happycoding.io/tutorials/processing/collision-detection)
 
 ## Step 2 - Task
-Demonstrate your learning objectives by writing a processing program that implements the following
+Demonstrate your learning objectives by writing a processing program that implements the following:
 
 ### Level 2
 * Image background
@@ -29,10 +28,10 @@ Demonstrate your learning objectives by writing a processing program that implem
 * Animate a shape
 
 ### Level 3
-In addition to Level 2 requirements, incorporate basic edge detection such that your animated objects do not permenantly move off the screen.
+In addition to Level 2 requirements, incorporate basic edge collision detection such that your animated objects do not permenantly move off the screen.
 
 ### Level 4
-In addtion to Level 3 requirements, animate an image so that it moves in a non-linear path i.e circular, wave, parabolic
+In addtion to Level 3 requirements, animate an image so that it moves in a non-linear path (e.g. circular, wave, parabolic)
 
 ## Resources
 Check out https://www.kenney.nl/assets for an extensive collection of images for your animation.  Note that the site is blocked at school so you'll need to use a VPN or download the files from home.
