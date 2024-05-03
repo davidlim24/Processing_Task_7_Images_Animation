@@ -5,29 +5,31 @@ public class Sketch extends PApplet {
 
   PImage imgBackground;
   PImage imgMarmot;
-  
-  // marmot cordiantes x and y
+
   float marmotX = 50;
   float marmotY = 100;
-  
-  // define marmot speed variable
   float marmotXSpeed = random(1, 5);
   float marmotYSpeed = random(1, 5);
-  
-  // define colors
-  int white = color(255, 255, 255);
+
+  int black = color(0);
+  int white = color(255);
+  int magenta = color(255, 0, 255);
+
+  float ballX = 400;
+  float ballY = 300;
+  float ballSpeedX = random(-5, 5);
+  float ballSpeedY = random(-5, 5);
 
   public void settings() {
-    size(300, 300);
+    size(800, 600);
   }
 
   public void setup() {
     imgBackground = loadImage("360_F_249687268_Yl4AswCdwBQS7NA6hczKq0pfnjQs02UP (1).jpg");
     imgBackground.resize(width, height);
-    background(imgBackground);
-    
+
     imgMarmot = loadImage("alpine-marmot-vnwMNE2-600-removebg-preview.png");
-    imgMarmot.resize(imgMarmot.width/4, imgMarmot.height/4);
+    imgMarmot.resize(imgMarmot.width/3, imgMarmot.height/3);
   }
 
   public void draw() {
@@ -38,17 +40,31 @@ public class Sketch extends PApplet {
     marmotX += marmotXSpeed;
     marmotY += marmotYSpeed;
 
-    // create bouncing
+    // Basic edge collision detection for marmot
     if (marmotX > width - imgMarmot.width || marmotX < 0) {
       marmotXSpeed *= -1;
     }
     if (marmotY > height - imgMarmot.height || marmotY < 0) {
       marmotYSpeed *= -1;
     }
+
+    // Ensure the marmot is always visible
     image(imgMarmot, marmotX, marmotY);
 
-    // draw a shape for moving object
-    fill(white);
-    ellipse(mouseX, mouseY, 50, 50);
+    // Draw and move a bouncing ball
+    fill(magenta);
+    ellipse(ballX, ballY, 50, 50);
+
+    ballX += ballSpeedX;
+    ballY += ballSpeedY;
+
+    // Basic edge collision detection for the ball
+    if (ballX > width - 25 || ballX < 25) {
+      ballSpeedX *= -1;
+    }
+
+    if (ballY > height - 25 || ballY < 25) {
+      ballSpeedY *= -1;
+    }
   }
 }
