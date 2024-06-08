@@ -29,7 +29,7 @@ public class Sketch extends PApplet {
     imgBackground.resize(width, height);
 
     imgMarmot = loadImage("alpine-marmot-vnwMNE2-600-removebg-preview.png");
-    imgMarmot.resize(imgMarmot.width/3, imgMarmot.height/3);
+    imgMarmot.resize(imgMarmot.width/3, imgMarmot.height/3); // resize the image
   }
 
   public void draw() {
